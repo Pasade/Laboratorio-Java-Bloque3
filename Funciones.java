@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Funciones{
      // 🌟 NUEVAS VARIABLES GLOBALES (Métricas del Estadio)
     // Estas variables viven fuera del main y guardan los datos durante toda la ejecución

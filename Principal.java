@@ -8,14 +8,14 @@ public class Principal {
         double[] inventarioPesos = {10.5, 5.2, 22.4, 3.0, 15.8};
         
         System.out.println("--- CONTROL DE CARGA DEL ALMACÉN ---");
-        
-        // El bucle for-each recorre de forma automática todo el array
-        for (double peso : inventarioPesos) {
-            if (peso > 10.0) {
-                System.out.println("Paquete pesado detectado: " + peso + " kg (Requiere etiqueta especial)");
-            } else {
-                System.out.println("Paquete estándar: " + peso + " kg");
-            }
+
+        for(int i = 0; i < inventarioPesos.length; i ++){
+            inventarioPesos[i] *= 1.10;
         }
+
+        System.out.println("Nuevo peso del primer paquete (con +10%): " + inventarioPesos[0] + "Kg");
+        System.out.println("Nuevo peso del tercer paquete (con +10%): " + inventarioPesos[2] + "Kg");
+        
+        
     }
 }

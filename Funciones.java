@@ -6,7 +6,7 @@ public class Funciones{
     public static double pesoTotal = 0.0;
 
     // Método de bienvenida básico
-    public static void bienVenidaGestorEnvios(){
+    public static void bienvenidaGestorEnvios(){
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("                      BIENVENIDO AL GESTOR DE ENVIOS (V1.0)");
         System.out.println("             Por favor introduzca los datos solicitados por la consola");

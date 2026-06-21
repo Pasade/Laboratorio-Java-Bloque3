@@ -2,19 +2,23 @@ public class Principal {
     
     public static void main(String[] args) {
 
-        //Creamos "Objeto" p1 usando el molde(Clase)
-        Paquete p1 = new Paquete();
-
         //Prueba de funciones en un archivo a parte
-        Funciones.bienVenidaGestorEnvios();
+        Funciones.bienvenidaGestorEnvios();
 
-        //Le asignamos los atributos
-        p1.codigoSeguimiento = "TX-75201";
-        p1.peso = 8.4;
-        p1.destino = "Dallas";
+        //Usamos la clase creada con el constructor
+        Paquete p1 = new Paquete(8.4, "Dallas");
+
+        p1.setDestino("Ribeira");
+        p1.setPeso(10);
+
+        //Ejecutamos la función para mostrar detalles
+        p1.mostrarDetalles();
+
+        //Creamos un segundo paquete usando el constructor para los casos en los que falta el dato destino
+        Paquete p2 = new Paquete(14.2);
 
         //Ejecutamos la funcion paramostrar los detalles
-        p1.mostrarDetalles();
+        p2.mostrarDetalles();
     }
 
 }

@@ -52,7 +52,7 @@ public class Camion{
     public void quitarPaquete(Paquete viejoPaquete){
         if(!listaDeEnvios.contains(viejoPaquete)){
             System.out.printf("El paquete que intentas eliminar no existe, actualmente hay este numero de paquetes %d\n", listaDeEnvios.size());
-            listaDeEnvios.mostrarDetallesPaquetesCamion();
+            mostrarDetallesPaquetesCamion();
         }
         else{
             listaDeEnvios.remove(viejoPaquete);
@@ -60,10 +60,10 @@ public class Camion{
         
     }
     //Metodo para borrar varios paquetes
-    public void quitarVariosPaquetes(Paquete viejosPaquetes){
+    public void quitarVariosPaquetes(Paquete... viejosPaquetes){
         if(!listaDeEnvios.containsAll(List.of(viejosPaquetes))){
             System.out.println("No todos los paquetes seleccionados se encuentran en el camión");
-           /listaDeEnvios.mostrarDetallesPaquetesCamion();
+           mostrarDetallesPaquetesCamion();
         }
         else{
             listaDeEnvios.removeAll(List.of(viejosPaquetes));
